@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            /* 
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围
+                    所以我们可以利用浮动来设置文字环绕图片的效果
+            */
+            float: left;
+        }
+
+        .box2{
+            background-color: yellowgreen;
+
+            /* 
+                元素怒设置浮动以后，将会从文档流中脱离，从文档流中脱离后，元素的一些特点也会发生变化
+
+                脱离文档流的特点：
+                    块元素：
+                        1、块元素不再独占页面的一行
+                        2、脱离文档流以后，块元素的宽度和高度默认都被内容撑开
+                    行内元素：
+                        行内元素脱离文档流以后会变成块元素，特点和块元素一样
+
+                    脱离文档流以后，不需要再区分块和行内了
+                        */
+            float: left;
+        }
+
+        .box3{
+            background-color: orange;
+        }
+
+        .S1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <p>我与父亲不相见已二年余了，我最不能忘记的是他的背影。
+        那年冬天，祖母死了，父亲的差使1也交卸了，正是祸不单行的日子。我从北京到徐州，打算跟着父亲奔丧2回家。到徐州见着父亲，看见满院狼藉3的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说：“事已如此，不必难过，好在天无绝人之路！”
+        回家变卖典质4，父亲还了亏空；又借钱办了丧事。这些日子，家中光景很是惨澹5，一半为了丧事，一半为了父亲赋闲6。丧事完毕，父亲要到南京谋事，我也要回北京念书，我们便同行。
+    </p> -->
+
+    <span class="S1">我是一个span</span>
+
+    <!-- <div class="box2">HELLO</div> -->
+    <!-- <div class="box3">hello</div> -->
+</body>
+</html>

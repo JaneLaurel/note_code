@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易的新闻列表</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+        body {
+            background-color: rgba(223, 223, 223, 0.356);
+        }
+
+        a {
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+
+        /* 设置容器的样式 */
+        .news-wrapper {
+            /* 设置宽度 */
+            width: 300px;
+            /* 设置高度 */
+            height: 357px;
+            /* 设置居中 */
+            margin: 50px auto;
+            /* 设置背景颜色，显示轮廓 */
+            background-color: rgba(255, 255, 255, 0.685);
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+        }
+
+        /* 设置news-titile */
+        .news-title {
+            /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 30px;
+            /* 设置上边框 */
+            border-top: 1px solid red;
+            /* 通过margin-top将h2上移，盖住上边框 */
+            margin-top: -1px;
+
+            padding-top: 10px;
+        }
+
+        /* 设置title重超链接的样式 */
+        .news-title a {
+            /* 设置字体颜色 */
+            color: #40406B;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+            /* 设置上外边距 */
+            margin-top: 10px;
+        }
+
+        /* 设置超链接鼠标移入的样式 */
+        .news-title a:hover {
+            color: red;
+        }
+
+        /* 设置图片容器的高度 */
+        .news-img {
+            height: 150px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title {
+            /* 向上移动文字 */
+            margin-top: -30px;
+            /* 设置字体颜色 */
+            color: #fff;
+            /* 设置加粗 */
+            font-weight: bold;
+            /* 设置padding */
+            padding-left: 30px;
+        }
+
+        /* 设置新闻列表 */
+        .news-list {
+            margin-top: 20px;
+            /* padding-left: 14px; */
+
+            /* color: rgba(102, 102, 102, 0.514); */
+            /* list-style: square; */
+        }
+
+        /* 设置li */
+        .news-list li {
+            margin-bottom: 17px;
+        }
+
+        /* 通过before伪元素，来为每一个li添加项目符号 */
+        .news-list li::before{
+            content: '■';
+            color: #ddd;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        /* 设置li中文字 */
+        .news-list li a {
+            font-size: 14px;
+            color: #666;
+
+        }
+
+        /* 设置超链接鼠标移入的样式 */
+        .news-list li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建新闻列表的外侧容器 -->
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a href="https://sports.163.com/">体育</a>
+        </h2>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <a href="https://www.163.com/sports/article/H61B4POL00058781.html">
+                <img src="img/03/sports.jpg" alt="国米">
+
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">
+                    国米门将泪洒赛场 队友这一幕太暖
+                </h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="https://www.163.com/sports/article/H5VO34I100058781.html">皇马和曼城，给欧冠打了一场最好的广告</a>
+            </li>
+
+            <li>
+                <a href="https://www.163.com/sports/article/H5UT39LO00059A81.html">这一次，悲情终于不再与辽宁队有关</a>
+            </li>
+            <li>
+                <a href="https://www.163.com/sports/article/H5UP12MB00058780.html">地产足球30年③ 山头林立</a>
+            </li>
+
+            <li>
+                <a href="https://www.163.com/sports/article/H5SLD67Q0005877U.html">暂停也不放过!"矮又壮"锁死KD 三分5中4打</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
